@@ -1,0 +1,48 @@
+/* Corpo da página em telas de computador */
+body {
+  animation: gradient 20s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+    no-repeat;
+  background-size: 300% 300%;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+  font-size: 300%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da página em telas de tablet */
+@media screen and (max-width: 850px) {
+  body {
+    background-color: tomato;
+    text-align: center;
+    font-size: 200%;
+  }
+}
+
+/* Corpo da página em telas de mobile */
+@media screen and (max-width: 550px) {
+  body {
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 100%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
